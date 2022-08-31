@@ -7,7 +7,7 @@ public class TrgArea {
     }
 
     public static double area(double a, double b, double c) {
-        double p = semiperimeter(a, b, c);
+        double p = TrgArea.semiperimeter(a, b, c);
         double rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         return rsl;
     }
