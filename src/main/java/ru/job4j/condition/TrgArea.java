@@ -1,13 +1,9 @@
 package ru.job4j.condition;
 
 public class TrgArea {
-    public static double semiperimeter(double a, double b, double c) {
-        double p = (a + b + c) / 2;
-        return p;
-    }
 
     public static double area(double a, double b, double c) {
-        double p = TrgArea.semiperimeter(a, b, c);
+        double p = (a + b + c) / 2;
         double rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         return rsl;
     }
