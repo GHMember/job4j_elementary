@@ -7,8 +7,8 @@ public class ArrayLoop {
             numbers[index] = index * 2 + 3;
         }
 
-        for (int number : numbers) {
-            System.out.println(number);
+        for (int number = 0; number < numbers.length; number++) {
+            System.out.println(numbers[number]);
         }
     }
 }
