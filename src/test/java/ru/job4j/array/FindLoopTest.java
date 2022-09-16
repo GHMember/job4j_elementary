@@ -43,7 +43,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenDiapasonHas5ThenMinus1() {
+    public void whenDiapasonHasNot5ThenMinus1() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 5;
         int start = 2;
