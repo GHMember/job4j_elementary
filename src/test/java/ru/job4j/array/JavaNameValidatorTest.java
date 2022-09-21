@@ -47,7 +47,7 @@ class JavaNameValidatorTest {
     }
 
     @Test
-    void whenatNumberAndTwoSpecialSymbolsUnderValid() {
+    void whenFirstExclamationMarkIsInvalid() {
         assertThat(isNameValid("!fir$t_u$er_1")).isFalse();
     }
 }
