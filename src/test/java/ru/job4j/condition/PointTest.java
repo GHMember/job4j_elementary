@@ -41,4 +41,22 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
+    public void when123to331then3dot0() {
+        double expected = 3.0;
+        Point a = new Point(1, 2, 3);
+        Point b = new Point(3, 3, 1);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void when111to111then0dot0() {
+        double expected = 0.0;
+        Point a = new Point(1, 1, 1);
+        Point b = new Point(1, 1, 1);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
 }
